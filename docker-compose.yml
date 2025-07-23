@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  node-backend:
+    image: backend
+    container_name: node-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - GEMINI_API_KEY=Key
+    env_file:
+      - .env
